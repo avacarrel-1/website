@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "pageTitle": "Ava Carrel"
+  },
+  "navigation": {
+    "logo": "Contact Me"
+  },
+  "menu": {
+    "title": "Explore"
+  },
+  "hero": {
+    "titlePrefix": "made by",
+    "name": "AVA CARREL",
+    "tagline": "\"The most effective way to do it, is to do it.\" — Amelia Earhart",
+    "bio": "I am an Economics student at Boston University with experience in finance, tech, and data-driven storytelling. I care about making complex systems more efficient, resilient, and useful for the people they serve. I'll be graduating in May 2027 and am always open to connecting.",
+    "exploreText": "explore"
+  },
+  "about": {
+    "title": "About Me",
+    "paragraphs": [
+      "I'm an Economics student with a Data Science minor at Boston University interested in the intersection of technology, finance, and people.",
+      "Much of my experience has focused on how financial decisions are made. As Vice Chair of the BU Allocations Board, I determine how more than $1 million in funding is allocated to student organizations each year and shape frameworks used to make those decisions. This summer, I'll be joining Fidelity Investments' Internal Audit and Risk team, where I'll contribute to the processes that help large organizations operate effectively and manage risk.",
+      "I'm equally drawn to building things. At Airsignal, a B2B communications intelligence startup, I developed a synthetic data generation pipeline that transformed sales metadata into realistic communications datasets. As Editor-in-Chief of an online newspaper, I've led a large team of writers while also helping design and improve the website and backend systems that support our publication.",
+      "I've also spent time thinking about how information becomes meaningful to its audience. At ING Group, I created processes that helped quickly produce media content for executive audiences, always starting with the question: why should you care?",
+      "Across these experiences, the through line is that I enjoy bringing structure to ambiguity, turning ideas into action, and improving how decisions are made. I'm interested in working in finance, consulting, and tech."
+    ]
+  },
+  "sections": [
+    {
+      "id": "ball-1",
+      "label": "People Leadership",
+      "color": "#E89F8F",
+      "blurb": "From a young age, I knew I wanted to be the one with the clipboard because it was the key to the room where it happens. Now, I prioritize clear goals, actionable plans, open feedback, and empathetic communication. But a leader is only as good as her team. I aim to create environments where people are invested in mutual goals and can see their own impact.",
+      "experiences": [
+        {
+          "org": "Boston University Allocations Board",
+          "location": "Boston, MA",
+          "dates": "March 2025 – Present",
+          "context": "Selected from 350 applicants to a 20-member student committee responsible for allocating $1M+ to student orgs.",
+          "role": "Vice Chair",
+          "bullets": [
+            "Direct $1M+ in student organization funding, weighing proposals against user needs, funding policy, and operational constraints to guide resource allocation.",
+            "Increased funding request process clarity to align with evolving club needs by implementing an advisor program and rewriting guidelines based on prior-year data and feedback from 400+ applicants."
+          ]
+        },
+        {
+          "org": "Student Satire Publication",
+          "location": "Boston, MA",
+          "dates": "August 2022 – Present",
+          "context": null,
+          "role": "Editor in Chief",
+          "bullets": [
+            "Lead a 40+ person staff of writers, photo editors, and web developers, balancing creative vision with audience engagement data to set publication goals and outreach strategy.",
+            "Guide multi-phase publication cycles including pitching headlines, providing feedback on writing and creative risks, and multi-medium projects like video production and graphics.",
+            "Automated content submission process by developing custom website using AI coding tools that streamlined intake, removed workflow bottlenecks, and saved ~4 hours per week."
+          ]
+        },
+        {
+          "org": "BU Center for Career Development",
+          "location": "Boston, MA",
+          "dates": "Sept 2025 – Present",
+          "context": null,
+          "role": "Career Peer Consultant – Event Programming Team",
+          "bullets": [
+            "Planned and executed engaging career development events attended by more than 400 students, including a Halloween-themed networking conference where participants connected in costume.",
+            "Analyze 20+ events' engagement performance in Airtable, using reports to boost visibility, measure impact, and guide data-driven improvements.",
+            "Advise 200+ students per week on resumes, cover letters, and personal branding communication for career goals."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ball-2",
+      "label": "Economics",
+      "color": "#4A89A8",
+      "blurb": "I am interested in how people make financial decisions, from tap-to-pay at the grocery store to foreign governments' investments. I've pored over nitty-gritty budget sheets and written corporate financial narratives meant to make numbers resonate with an audience. Now what excites me most is finding ways to connect financial analysis, technology, and human behavior to create better outcomes.",
+      "experiences": [
+        {
+          "org": "Boston University Allocations Board",
+          "location": "Boston, MA",
+          "dates": "March 2025 – Present",
+          "context": "Selected from 350 applicants to a 20-member student committee responsible for allocating $1M+ to student orgs.",
+          "role": "Vice Chair",
+          "bullets": [
+            "Direct $1M+ in student organization funding, weighing proposals against user needs, funding policy, and operational constraints to guide resource allocation.",
+            "Increased funding request process clarity to align with evolving club needs by implementing an advisor program and rewriting guidelines based on prior-year data and feedback from 400+ applicants."
+          ]
+        },
+        {
+          "org": "ING Group",
+          "location": "Sydney, Australia",
+          "dates": "March 2026 – May 2026",
+          "context": null,
+          "role": "Corporate Affairs Intern",
+          "bullets": [
+            "Pitched and scripted finance segments for Channel 7; ~75% story selection rate and airing to 7M+ weekly viewers.",
+            "Built an event-driven comms template system to capitalize on market turbulence, generating scalable, cross-sector insights for executive audiences; prototypes (article/video/LinkedIn) adopted by Corporate Affairs leadership.",
+            "Created and published data-backed consumer content series for ING Group Instagram (4K+ followers; 100+ likes) and authored LinkedIn content for ING senior executives.",
+            "Analyzed ING competitors' wholesale bank positioning and performance across media channels; identified gaps in messaging and proposed corporate comms content strategy to differentiate ING Wholesale Bank."
+          ]
+        },
+        {
+          "org": "Undergraduate Economics Journal",
+          "location": "Boston, MA",
+          "dates": "Sept 2025 – Present",
+          "context": null,
+          "role": "Senior Editor",
+          "bullets": [
+            "Evaluate the accuracy of datasets and diagnose flaws in econometric models, guiding 3 student research teams per semester toward more robust regression analyses and stronger conclusions.",
+            "Refine manuscripts by integrating economic theory with empirical evidence, ensuring clarity, precision, and publication-readiness for the semesterly journal."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ball-3",
+      "label": "For Fun",
+      "color": "#C49A20",
+      "blurb": "I thrive on a full calendar and on my Google Calendar yellow = fun. Scattered between classes, meetings, and deadlines are yellow blocks for stand-up comedy shows, karaoke in my stairwell, writing movie and book reviews, and the occasional deep dive into whatever new tech tool has captured my attention.",
+      "experiences": []
+    },
+    {
+      "id": "ball-4",
+      "label": "Data Science",
+      "color": "#2B4F5F",
+      "blurb": "Tools can be taught. Code can be written by bots, in fact Claude built this site. What will never change is the need for iteration and evaluation. Data matters to me because making decisions without intention and measurement is just hoping for the best.",
+      "experiences": [
+        {
+          "org": "AirSignal Inc.",
+          "location": "Bellevue, WA",
+          "dates": "May 2025 – Aug 2025",
+          "context": "VC Backed (Madrona & Point72) B2B Communications Intelligence Startup",
+          "role": "Business Systems and Operations Intern",
+          "bullets": [
+            "Modeled real-world software sales process by building a Python + LLM synthetic data pipeline that generated 400+ customer datasets, powering client demos to advance go-to-market readiness and demonstrate product value.",
+            "Accelerated investor review time and eliminated document loss by building and deploying an agentic n8n automation that cut manual dataroom input by 70%.",
+            "Influenced leadership decisions through risk and compliance analyses of MDM, RBAC, and AI vendors, resulting in adoption of an RBAC tool projected to cut manual administration by 50%."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ball-5",
+      "label": "Journalism",
+      "color": "#9E8E80",
+      "blurb": "A decision is only as impactful as the people who believe in it. My storytelling encourages people to resonate with \"the why\" and take action. Attention is the most powerful currency, and I'm fascinated by how it's earned.",
+      "experiences": [
+        {
+          "org": "ING Group",
+          "location": "Sydney, Australia",
+          "dates": "March 2026 – May 2026",
+          "context": null,
+          "role": "Corporate Affairs Intern",
+          "bullets": [
+            "Pitched and scripted finance segments for Channel 7; ~75% story selection rate and airing to 7M+ weekly viewers.",
+            "Built an event-driven comms template system to capitalize on market turbulence, generating scalable, cross-sector insights for executive audiences; prototypes (article/video/LinkedIn) adopted by Corporate Affairs leadership.",
+            "Created and published data-backed consumer content series for ING Group Instagram (4K+ followers; 100+ likes) and authored LinkedIn content for ING senior executives.",
+            "Analyzed ING competitors' wholesale bank positioning and performance across media channels; identified gaps in messaging and proposed corporate comms content strategy to differentiate ING Wholesale Bank."
+          ]
+        },
+        {
+          "org": "Undergraduate Economics Journal",
+          "location": "Boston, MA",
+          "dates": "Sept 2025 – Present",
+          "context": null,
+          "role": "Senior Editor",
+          "bullets": [
+            "Evaluate the accuracy of datasets and diagnose flaws in econometric models, guiding 3 student research teams per semester toward more robust regression analyses and stronger conclusions.",
+            "Refine manuscripts by integrating economic theory with empirical evidence, ensuring clarity, precision, and publication-readiness for the semesterly journal."
+          ]
+        },
+        {
+          "org": "Student Satire Publication",
+          "location": "Boston, MA",
+          "dates": "August 2022 – Present",
+          "context": null,
+          "role": "Editor in Chief",
+          "bullets": [
+            "Lead a 40+ person staff of writers, photo editors, and web developers, balancing creative vision with audience engagement data to set publication goals and outreach strategy.",
+            "Automated content submission process by developing custom website using AI coding tools that streamlined intake, removed workflow bottlenecks, and saved ~4 hours per week.",
+            "Guide multi-phase publication cycles including pitching headlines, providing feedback on writing and creative risks, and multi-medium projects like video production and graphics.",
+            "Organized a satirical debate night with 65+ attendees to raise $400+ for a local women's center, engaging 5+ student organizations in the event."
+          ]
+        }
+      ]
+    }
+  ]
+}

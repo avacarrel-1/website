@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css?v=2">
+    <link
+     rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair+Display+SC:wght@400;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="admin-panel.css?v=2">
+</head>
+<body>
+    <!-- Admin Toggle Button (hidden, bottom-right corner) -->
+    <button id="admin-toggle" class="admin-toggle" aria-label="Admin Panel" title="Admin Panel (Ctrl+Shift+E)">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
+            <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path>
+        </svg>
+    </button>
+    <!-- Decorative Circles -->
+    <div class="decorative-circles">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
+        <div class="circle circle-4"></div>
+        <div class="circle circle-5"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- EDIT: Replace with your initials or name -->
+            <a href="mailto:ava.carrel@gmail.com" class="logo">Contact Me</a>
+            <button class="menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Menu Overlay -->
+    <div class="menu-overlay">
+        <div class="menu-content">
+            <h2 class="menu-title">Explore</h2>
+            <ul class="menu-list">
+                <!-- EDIT: Update these to match your ball labels and add links/descriptions -->
+                <li><button class="menu-item" data-ball="ball-2">Economics</button></li>
+                <li><button class="menu-item" data-ball="ball-1">People Leadership</button></li>
+                <li><button class="menu-item" data-ball="ball-4">Data Science</button></li>
+                <li><button class="menu-item" data-ball="ball-5">Journalism</button></li>
+                <li><button class="menu-item" data-ball="ball-3">For Fun</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <!-- EDIT: Replace with your name -->
+                    <h1 class="hero-title">
+                        <button type="button" class="about-badge" id="about-badge" aria-label="About Ava Carrel">about</button>
+                        <span class="title-main">AVA CARREL</span>
+                    </h1>
+
+                    <!-- EDIT: Replace with your tagline -->
+                    <p class="hero-subtitle">"Every line of code is her sound"</p>
+                </div>
+
+                <!-- Bio Section -->
+                <div class="bio-section">
+                    <!-- EDIT: Replace with your bio -->
+                    <p class="bio-text">
+                        I'm a software engineer passionate about building beautiful,
+                        functional web experiences. I love working with modern technologies
+                        and solving complex problems through clean, efficient code.
+                    </p>
+                </div>
+
+                <!-- Explore Text -->
+                <div class="explore-section">
+                    <p class="explore-text">explore</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Floating Color Balls Section -->
+        <section class="floating-balls-section">
+            <!-- EDIT: Change labels for each color ball -->
+            <div class="color-ball ball-1" data-label="People Leadership">
+                <span class="ball-label">People Leadership</span>
+            </div>
+            <div class="color-ball ball-2" data-label="Economics">
+                <span class="ball-label">Economics</span>
+            </div>
+            <div class="color-ball ball-3" data-label="For Fun">
+                <span class="ball-label">For Fun</span>
+            </div>
+            <div class="color-ball ball-4" data-label="Data Science">
+                <span class="ball-label">Data Science</span>
+            </div>
+            <div class="color-ball ball-5" data-label="Journalism">
+                <span class="ball-label">Journalism</span>
+            </div>
+        </section>
+    </main>
+
+    <!-- Password Prompt -->
+    <div id="password-prompt" class="password-prompt">
+        <div class="password-prompt-content">
+            <h3>Admin Access</h3>
+            <p>Enter password to continue</p>
+            <div id="password-error" class="password-error">Incorrect password</div>
+            <div class="password-input-group">
+                <input type="password" id="admin-password" placeholder="Password" autocomplete="off">
+            </div>
+            <div class="password-actions">
+                <button id="password-submit" class="btn btn-primary" style="flex: 1;">Unlock</button>
+                <button id="password-cancel" class="btn btn-secondary">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Panel -->
+    <div id="admin-panel" class="admin-panel">
+        <div class="admin-panel-content">
+            <div class="admin-panel-header">
+                <h2>Content Editor</h2>
+                <button id="close-admin" class="close-btn" aria-label="Close">&times;</button>
+            </div>
+
+            <form id="admin-form" class="admin-form">
+                <div class="form-section">
+                    <h3>Meta</h3>
+                    <div class="form-group">
+                        <label for="page-title">Page Title (browser tab)</label>
+                        <input type="text" id="page-title" required>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Navigation</h3>
+                    <div class="form-group">
+                        <label for="logo">Logo Text</label>
+                        <textarea id="logo" rows="2" required></textarea>
+                        <small>Use a line break to split into two lines</small>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Menu</h3>
+                    <div class="form-group">
+                        <label for="menu-title">Menu Title</label>
+                        <input type="text" id="menu-title" required>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Hero Section</h3>
+                    <div class="form-group">
+                        <label for="title-prefix">Title Prefix</label>
+                        <input type="text" id="title-prefix" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tagline">Tagline</label>
+                        <input type="text" id="tagline" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bio">Bio</label>
+                        <textarea id="bio" rows="4" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="explore-text">Explore Text</label>
+                        <input type="text" id="explore-text" required>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Resume Sections</h3>
+                    <small class="section-note">These labels appear on both the floating balls and in the menu</small>
+                    <div class="form-group">
+                        <label for="section-1">Section 1 (Coral ball)</label>
+                        <input type="text" id="section-1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="section-2">Section 2 (Ocean ball)</label>
+                        <input type="text" id="section-2" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="section-3">Section 3 (Sunshine ball)</label>
+                        <input type="text" id="section-3" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="section-4">Section 4 (Navy ball)</label>
+                        <input type="text" id="section-4" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="section-5">Section 5 (Cream ball)</label>
+                        <input type="text" id="section-5" required>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                    <button type="button" id="reset-content" class="btn btn-secondary">Reset to Defaults</button>
+                </div>
+
+                <div class="form-section backup-section">
+                    <h3>Backup & Restore</h3>
+                    <p class="backup-note">Export your content to save a backup. Import to restore from a backup file.</p>
+                    <div class="backup-actions">
+                        <button type="button" id="export-content" class="btn btn-outline">Export Content</button>
+                        <button type="button" id="import-content" class="btn btn-outline">Import Content</button>
+                        <input type="file" id="import-file" accept=".json" style="display: none;">
+                    </div>
+                </div>
+
+                <div id="save-status" class="save-status"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Ball Modal -->
+    <div id="ball-modal" class="ball-modal" role="dialog" aria-modal="true" aria-labelledby="ball-modal-title">
+        <div class="ball-modal-overlay"></div>
+        <div class="ball-modal-content">
+            <div class="ball-modal-header">
+                <h2 class="ball-modal-title" id="ball-modal-title"></h2>
+                <button class="ball-modal-close" aria-label="Close">&times;</button>
+            </div>
+            <div class="ball-modal-body">
+                <p class="ball-modal-blurb"></p>
+                <div class="ball-modal-experiences"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="content-manager.js?v=2"></script>
+    <script src="script.js?v=2"></script>
+    <script src="admin-panel.js?v=2"></script>
+</body>
+</html>

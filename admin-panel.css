@@ -1,0 +1,402 @@
+/* ===========================
+   ADMIN PANEL STYLES
+   =========================== */
+
+/* Admin Toggle Button - Hidden for production */
+.admin-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(232, 223, 212, 0.9);
+    border: 2px solid #D4A574;
+    color: #2C3E50;
+    cursor: pointer;
+    display: none; /* Hidden by default - use Ctrl+Shift+E or #admin to access */
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 999;
+    opacity: 0.4;
+}
+
+.admin-toggle:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Admin Panel Overlay */
+.admin-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    z-index: 10000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.admin-panel.active {
+    display: flex;
+}
+
+/* Admin Panel Content */
+.admin-panel-content {
+    background: #ffffff;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 700px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Admin Panel Header */
+.admin-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 28px;
+    border-bottom: 2px solid #E8DFD4;
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    z-index: 1;
+}
+
+.admin-panel-header h2 {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: #2C3E50;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 32px;
+    color: #7f8c8d;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.close-btn:hover {
+    background: #E8DFD4;
+    color: #2C3E50;
+}
+
+/* Admin Form */
+.admin-form {
+    padding: 28px;
+}
+
+.form-section {
+    margin-bottom: 32px;
+}
+
+.form-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: #2C3E50;
+    margin: 0 0 16px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #E8DFD4;
+}
+
+.section-note {
+    display: block;
+    margin-bottom: 16px;
+    color: #7f8c8d;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    color: #34495e;
+    font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 2px solid #E8DFD4;
+    border-radius: 6px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    color: #2C3E50;
+    transition: border-color 0.2s ease;
+    box-sizing: border-box;
+}
+
+.form-group input[type="text"]:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #D4A574;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 60px;
+}
+
+.form-group small {
+    display: block;
+    margin-top: 4px;
+    font-size: 13px;
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+/* Form Actions */
+.form-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 2px solid #E8DFD4;
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background: #D4A574;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: #c89560;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(212, 165, 116, 0.3);
+}
+
+.btn-secondary {
+    background: #e8dfd4;
+    color: #2C3E50;
+}
+
+.btn-secondary:hover {
+    background: #d4c9bb;
+}
+
+.btn-outline {
+    background: transparent;
+    color: #D4A574;
+    border: 2px solid #D4A574;
+}
+
+.btn-outline:hover {
+    background: #D4A574;
+    color: #ffffff;
+}
+
+/* Backup Section */
+.backup-section {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.backup-note {
+    margin: 0 0 16px 0;
+    font-size: 14px;
+    color: #5a6c7d;
+    line-height: 1.5;
+}
+
+.backup-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+/* Save Status */
+.save-status {
+    display: none;
+    margin-top: 20px;
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+.save-status.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.save-status.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Password Prompt Modal */
+.password-prompt {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    z-index: 11000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.password-prompt.active {
+    display: flex;
+}
+
+.password-prompt-content {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 32px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.3s ease;
+}
+
+.password-prompt h3 {
+    margin: 0 0 20px 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: #2C3E50;
+    text-align: center;
+}
+
+.password-prompt p {
+    margin: 0 0 20px 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    color: #7f8c8d;
+    text-align: center;
+}
+
+.password-input-group {
+    margin-bottom: 20px;
+}
+
+.password-input-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #E8DFD4;
+    border-radius: 6px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    color: #2C3E50;
+    box-sizing: border-box;
+}
+
+.password-input-group input:focus {
+    outline: none;
+    border-color: #D4A574;
+}
+
+.password-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.password-error {
+    display: none;
+    margin-bottom: 16px;
+    padding: 10px;
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 6px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .admin-panel-content {
+        max-width: 100%;
+        max-height: 100vh;
+        border-radius: 0;
+    }
+
+    .admin-panel-header {
+        padding: 20px;
+    }
+
+    .admin-panel-header h2 {
+        font-size: 24px;
+    }
+
+    .admin-form {
+        padding: 20px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .backup-actions {
+        flex-direction: column;
+    }
+
+    .admin-toggle {
+        bottom: 15px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+    }
+}
