@@ -48,37 +48,13 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        // Handle menu item clicks - highlight corresponding ball
+        // Close the menu when an item is clicked. The modal opening for menu
+        // items is wired up in the ContentManager.load() block below, alongside
+        // the ball click handlers, since both need the loaded section data.
         menuItems.forEach(item => {
             item.addEventListener('click', function() {
-                const ballClass = this.getAttribute('data-ball');
-                const ball = document.querySelector(`.${ballClass}`);
-
-                if (ball) {
-                    // Add temporary highlight effect
-                    ball.style.transform = 'scale(1.2)';
-                    ball.style.transition = 'transform 0.3s ease';
-
-                    setTimeout(() => {
-                        ball.style.transform = 'scale(1)';
-                    }, 300);
-
-                    // Show the ball's label temporarily
-                    const label = ball.querySelector('.ball-label');
-                    if (label) {
-                        label.style.opacity = '1';
-                        setTimeout(() => {
-                            label.style.opacity = '0';
-                        }, 2000);
-                    }
-                }
-
-                // Close menu
                 menuBtn.classList.remove('active');
                 menuOverlay.classList.remove('active');
-
-                // TODO: When you create pages, replace the highlight code above with:
-                // window.location.href = 'coral.html'; // or whatever page corresponds to this ball
             });
         });
 
@@ -461,6 +437,15 @@ document.addEventListener('DOMContentLoaded', function() {
             const section = content.sections.find(s => s.id === ballClass);
             if (!section) return;
             el.addEventListener('click', () => openModal(section));
+        });
+
+        // Menu items open the same modal as their corresponding ball. The
+        // data-ball attribute (e.g. "ball-2") matches a section id.
+        menuItems.forEach(item => {
+            const ballClass = item.getAttribute('data-ball');
+            const section = content.sections.find(s => s.id === ballClass);
+            if (!section) return;
+            item.addEventListener('click', () => openModal(section));
         });
 
         // Wire the glowing "about" badge in the hero to the same modal
